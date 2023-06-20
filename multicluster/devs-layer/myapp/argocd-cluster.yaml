@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
-  name: openshift-gitops
-  namespace: openshift-gitops
+  name: myapp
+  namespace: myapp
   ownerReferences:
     - apiVersion: pipelines.openshift.io/v1alpha1
       blockOwnerDeletion: true
@@ -83,6 +83,7 @@ spec:
   rbac:
     policy: |
       g, cluster-admins, role:admin
+      g, argo-managers, role:admin
       g, system:cluster-admins, role:admin
     scopes: '[groups]'
   repo:
