@@ -1,0 +1,10 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  name: tracing-system
+  annotations:
+    openshift.io/description: "Project to deploy Distributed Tracing components"
+    openshift.io/display-name: "Tracing System"
+    argocd.argoproj.io/sync-wave: "0"
+
+

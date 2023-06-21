@@ -5,8 +5,8 @@ metadata:
   namespace: openshift-operators
   labels:
     operators.coreos.com/jaeger-product.openshift-operators: ''
-  #annotations:
-  #  argocd.argoproj.io/sync-wave: "1"
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   channel: stable
   installPlanApproval: Automatic
