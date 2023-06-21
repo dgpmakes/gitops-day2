@@ -3,8 +3,6 @@ kind: Jaeger
 metadata:
   name: jaeger
   namespace: tracing-system
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
 spec:
   strategy: allInOne
 
